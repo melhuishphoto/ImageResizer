@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+input {
+    min-width: 100px;
+}
+
+input[type=checkbox] {
+    min-width: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    margin: 5px;
+    flex-grow: 2;
+}
+
+.right {
+    width: 100px !important;
+    margin: 5px;
+    text-align: center;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin: 15px auto;
+}
+
+.check {
+    display: inline-block;
+    padding: 2px;
+    margin: 0 10px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Resizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" sizes="256x256" href="icon.ico">
+    <link rel="favicon" sizes="256x256" href="icon.ico">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<form>
+    <div class="row">
+        <input id="image-size" class="left" type="range" min="16" max="2400" value="1200">
+        <label id="image-size-label" class="right" for="image-size"></label>
+    </div>
+    <div class="row">
+        <input id="thumb-size" class="left" type="range" min="16" max="2400" value="320">
+        <label id="thumb-size-label" class="right" for="thumb-size"></label>
+    </div>
+    <div class="row">
+        <input id="quality" class="left" type="range" min="1" max="100" value="65">
+        <label id="quality-label" class="right" for="quality"></label>
+    </div>
+    <div class="row">
+        <input id="directory" class="left" type="text">
+        <input id="choose" class="right" type="button" value="Choose Dir">
+    </div>
+    <div class="row">
+        <progress id="progress" class="left" value="0" hidden></progress>
+    </div>
+    <div class="row">
+        <div class="center">
+            <input id="start" type="button" value="Start">
+        </div>
+    </div>
+</form>
+</body>
+</html>
