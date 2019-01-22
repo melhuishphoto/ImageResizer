@@ -1,9 +1,10 @@
 package resize
 
 import (
+	"runtime"
+
 	"github.com/skratchdot/open-golang/open"
 	"github.com/sqweek/dialog"
-	"runtime"
 )
 
 func ChooseFile() string {

@@ -4,13 +4,15 @@ package main
 
 import (
 	"fmt"
-	"github.com/GeertJohan/go.rice"
-	"github.com/melhuishphoto/ImageResizer/resize"
-	"github.com/shibukawa/configdir"
-	"github.com/zserge/lorca"
 	"log"
 	"net"
 	"net/http"
+
+	"github.com/GeertJohan/go.rice"
+	"github.com/shibukawa/configdir"
+	"github.com/zserge/lorca"
+
+	"github.com/melhuishphoto/ImageResizer/resize"
 )
 
 func main() {
@@ -22,7 +24,7 @@ func main() {
 	}
 	ui.Bind("choose", Choose(ui))
 	ui.Bind("resize", Resize(ui))
-	//ui.Eval(`window.moveTo((screen.width-window.outerWidth)/2,(screen.height-window.outerHeight)/4)`)
+	ui.Eval(`window.moveTo((screen.width-window.outerWidth)/2,(screen.height-window.outerHeight)/2)`)
 	<-ui.Done()
 }
 

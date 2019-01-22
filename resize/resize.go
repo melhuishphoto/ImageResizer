@@ -1,7 +1,6 @@
 package resize
 
 import (
-	"github.com/disintegration/imaging"
 	"image"
 	"image/jpeg"
 	"io"
@@ -10,6 +9,8 @@ import (
 	"os"
 	"path/filepath"
 	"time"
+
+	"github.com/disintegration/imaging"
 )
 
 type Progress func(progress, total int)
